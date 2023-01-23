@@ -1,0 +1,48 @@
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+
+    }
+    
+
+    &__button {
+        margin-top: 0;
+        text-align: center;
+        padding: 6px 22px;
+        border-radius: 4px;
+        background-color: var(--buttons-portfolio-color);
+        color: var(--title-text-color);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        cursor: pointer;
+        border: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__button:hover,
+    &__button:focus {
+        background-color: var(--accent-color);
+        color: var(--secondary-text-color);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__list + &__list {
+        margin-left: 8px;
+    }
+    &__list:nth-last-child(-n + 1){
+        margin-top: 15px;
+        @media screen and (min-width:768px) {
+            margin-top: 0;
+        }
+    }
+}
