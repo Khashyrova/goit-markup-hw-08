@@ -93,26 +93,30 @@
     margin-top: 32px;
 }
 .mob__item-tel{
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     margin-bottom: 32px;
 }
 .tel{
     color: var(--accent-color);
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
-.mob__item-email{
+.email{
     font-weight: 500;
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--contacts-color);
+}
+.mob__item-email{
+    
     margin-bottom: 64px;
 }
 .mobile-menu-soc{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .soc-link{
     
